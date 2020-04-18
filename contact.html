@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <title>Home | Covid 19 | Gama Academy</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <div class="header__logo">
+          <a href="/index.html">
+            <img
+              src="images/logo1.webp"
+              alt="Logo, Notícias Covid 19"
+              title="Notícias COVID 19"
+            />
+            <p>COVID 19</p>
+          </a>
+        </div>
+        <nav class="header__menu">
+          <div class="header__menu-desktop">
+            <ul class="header__menu-desktop-items">
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/about.html">Sobre</a></li>
+              <li><a href="/contact.html">Contato</a></li>
+              <li><a href="/knowmore.html">Saiba Mais</a></li>
+            </ul>
+          </div>
+          <div class="header__menu-mobile">
+            <div class="header__menu-icon js-mobile-menu">
+              <div class="header__menu-icon-bar"></div>
+              <div class="header__menu-icon-bar"></div>
+              <div class="header__menu-icon-bar"></div>
+            </div>
+            <div class="header__menu-mobile-overlay js-mobile-menu-overlay">
+              <ul class="header__menu-mobile-items">
+                <li>
+                  <a class="js-mobile-menu-item" href="/index.html">Home</a>
+                </li>
+                <li>
+                  <a class="js-mobile-menu-item" href="/about.html">Sobre</a>
+                </li>
+                <li>
+                  <a class="js-mobile-menu-item" href="/contact.html"
+                    >Contato</a
+                  >
+                </li>
+                <li>
+                  <a class="js-mobile-menu-item" href="/knowmore.html"
+                    >Saiba Mais</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="container content">
+      <div class="contact">
+        <h1>Contato</h1>
+        <form
+          action="mailto:ricardo.almendro.ruiz@gmail.com"
+          method="get"
+          enctype="text/plain"
+          class="contact-form"
+        >
+          <div class="contact-form__control">
+            <label for="name">Nome</label>
+            <input type="text" name="name" autocomplete="off" required />
+          </div>
+          <div class="contact-form__control">
+            <label for="mail">E-mail</label>
+            <input type="email" name="mail" autocomplete="off" required />
+          </div>
+          <div class="contact-form__control">
+            <label for="subject">Assunto</label>
+            <input type="text" name="subject" autocomplete="off" required />
+          </div>
+          <div class="contact-form__control">
+            <label for="body">Mensagem</label>
+            <textarea name="body" rows="10" required></textarea>
+          </div>
+          <div class="contact-form__actions">
+            <button type="submit">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p class="footer__description">Notícias - COVID 19</p>
+    </footer>
+
+    <script src="./js/menu.js"></script>
+  </body>
+</html>
